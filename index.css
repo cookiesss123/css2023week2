@@ -50,11 +50,200 @@ table {
 *, *::before, *::after{
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 150%;
+}
 img{
     vertical-align: middle;
 }
-h1{
-    font-size: 120px;
-    color: blueviolet;
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+.navbar{
+    background: #000;
+    padding-top: 40px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #D1D1D1;
+}
+.banner{
+    background: #000;
+    padding: 72px 0;
+}
+.banner .container{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+.banner p{
+    color: #FFF;
+    font-size: 64px;
+    line-height: 150%;
+    text-align: start;
+}
+.banner h1{
+    color: #00FFA3;
+    font-size: 128px;
+    line-height: 150%;
+}
+.banner .container a{
+    text-decoration: none;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 32px;
+    background: #FFF;
+}
+.banner .container a img{
+    margin-left: 4px;
+}
+
+.introduction{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 160px 0;
+}
+.introduction .container{
+    display: flex;
+}
+.introduction h2{
+    color: #FFF;
+    font-size: 64px;
+    line-height: 150%;
+    margin-bottom: 36px;
+}
+.introduction p{
+    color: #FFF;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.introduction .container div ul{
+    display: flex;
+    justify-content: space-between;
+    width: 128px;
+}
+
+.introduction .container > ul{
+    margin-left: 24px;
+    display: flex;
+}
+.introduction .container > ul li:nth-child(2) img{
+    margin: 0 24px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0;
+}
+.about ul{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 24px;
+    align-self: center;
+}
+.about ul li{
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    width: 306px;
+}
+.about ul li h3{
+    color: #15161D;
+    font-size: 20px;
+}
+.about div{
+    width: 526px;
+}
+.about div h2{
+    font-size: 64px;
+    line-height: 150%; 
+    margin-bottom: 36px;
+}
+.about div p{
+    color: #15161D;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.contact{
+    padding: 96px 0;
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .container ul{
+    display: flex;
+}
+.contact .container ul li:nth-child(2){
+    margin: 0 20px;
+}
+.contact h2{
+    color: #FFF;
+    font-size: 64px;
+    line-height: 150%;
+}
+.contact h2 img{
+    margin-left: 12px;
+}
+.projects{
+    display: flex;
+    padding: 160px 0;
+}
+.projects > img{
+    margin-right: 24px;
+}
+.projects h2{
+    font-size: 64px;
+    line-height: 150%;
+}
+.projects > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+.projects p{
+    color: #15161D;
+    line-height: 150%;
+}
+.projects > div > div > div a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 32px;
+    background: #000;
+}
+.projects > div > div > div a img{
+    margin-left: 4px;
+}
+.projects > div > div > div{
+    margin-left: 24px;
+}
+.projectsIntro{
+    margin-bottom: 28px;
+}
+.projectsIntro div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.footer{
+    background: #000;
+    padding: 40px 0;
+}
+.footer p{
+    color: #FFF;
+    text-align: center;
 }
