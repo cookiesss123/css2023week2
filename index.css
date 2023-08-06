@@ -52,7 +52,8 @@ table {
 }
 body{
     font-family: 'Bruno Ace SC', cursive;
-    line-height: 150%;
+    line-height: 1.5;
+    /* line-height: 150%; */
 }
 img{
     vertical-align: middle;
@@ -85,13 +86,11 @@ img{
 .banner p{
     color: #FFF;
     font-size: 64px;
-    line-height: 150%;
     text-align: start;
 }
 .banner h1{
     color: #00FFA3;
     font-size: 128px;
-    line-height: 150%;
 }
 .banner .container a{
     text-decoration: none;
@@ -117,13 +116,11 @@ img{
 .introduction h2{
     color: #FFF;
     font-size: 64px;
-    line-height: 150%;
     margin-bottom: 36px;
 }
 .introduction p{
     color: #FFF;
     font-size: 24px;
-    line-height: 150%;
     margin-bottom: 32px;
 }
 .introduction .container div ul{
@@ -166,13 +163,11 @@ img{
 }
 .about div h2{
     font-size: 64px;
-    line-height: 150%; 
     margin-bottom: 36px;
 }
 .about div p{
     color: #15161D;
     font-size: 24px;
-    line-height: 150%;
 }
 
 .contact{
@@ -200,7 +195,6 @@ img{
 .contact h2{
     color: #FFF;
     font-size: 64px;
-    line-height: 150%;
 }
 .contact h2 img{
     margin-left: 12px;
@@ -215,7 +209,6 @@ img{
 }
 .projects h2{
     font-size: 64px;
-    line-height: 150%;
     margin-bottom: 16px;
     margin-left: 110px;
 }
@@ -225,7 +218,6 @@ img{
 }
 .projects p{
     color: #15161D;
-    line-height: 150%;
 }
 .projects > div > div > div a{
     text-decoration: none;
