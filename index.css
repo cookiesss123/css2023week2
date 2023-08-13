@@ -59,6 +59,10 @@ body{
 img{
     vertical-align: middle;
 }
+a{
+    display: inline-block;
+    text-decoration: none;
+}
 .container{
     width: 1296px;
     margin: 0 auto;
@@ -71,9 +75,11 @@ img{
     display: flex;
     justify-content: space-between;
 }
-.navbar ul li a{
-    text-decoration: none;
+.navbar li, .navbar a{
     color: #D1D1D1;
+}
+.navbar a:hover{
+    text-shadow: 0.1em 0.1em 0.05em white;
 }
 .banner{
     background: #000;
@@ -94,11 +100,14 @@ img{
     font-size: 128px;
 }
 .banner .container a{
-    text-decoration: none;
+    
     color: #000;
     padding: 12px 24px;
     border-radius: 32px;
     background: #FFF;
+}
+.banner a:hover{
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .banner .container a img{
     margin-left: 4px;
@@ -143,19 +152,26 @@ img{
     justify-content: space-between;
     padding: 160px 0;
 }
-.about ul{
+.about ol{
+    /* 方法一 grid 排版 */
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 24px;
     align-self: center;
+    /* 方法二 flex 排版
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 50%; */
 }
-.about ul li{
+.about ol li{
     padding: 16px;
     border: 1px solid #E3E3E3;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
     width: 306px;
 }
-.about ul li h3{
+.about ol li h3{
     color: #15161D;
     font-size: 20px;
 }
@@ -221,7 +237,7 @@ img{
     color: #15161D;
 }
 .projects > div > div > div a{
-    text-decoration: none;
+    
     color: white;
     padding: 12px 24px;
     border-radius: 32px;
@@ -242,6 +258,11 @@ img{
     align-items: start;
     justify-content: space-between;
 }
+
+.projectsIntro a:hover{
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .footer{
     background: #000;
     padding: 40px 0;
